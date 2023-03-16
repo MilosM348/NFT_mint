@@ -1,6 +1,7 @@
 import { getShortAddress } from '../service/string'
 
 const Header = (props) => {
+  const { address, connect } = props
   return (
     <nav className="navbar navbar-expand-lg navbar-light nav-custom">
       <div className="container-fluid">
