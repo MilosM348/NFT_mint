@@ -5,6 +5,9 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import siteConfig from "../config/site.config";
 import { connect } from "../api/wallet";
+import { mint, owner } from "../api/nft"
+import { getShortAddress } from '../service/string'
+import { getWei } from '../service/common'
 
 const Home = () => {
   const [amount, setAmount] = useState(1);
